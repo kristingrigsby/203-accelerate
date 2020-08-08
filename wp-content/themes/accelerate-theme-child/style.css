@@ -60,15 +60,13 @@ Text Domain:  accelerate-theme-child
     margin-bottom: 2em;
 }
 .individual-featured-work a {
-	display: block;
+	display: inline-block;
 }
 .individual-featured-work h3 {
     font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
 figure {
-	float: left;
 	width: 33%;
-	padding: 20px;
 }
 /* Case Studies */
 aside.case-study-sidebar {
