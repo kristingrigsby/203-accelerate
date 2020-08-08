@@ -39,12 +39,13 @@ get_header(); ?>
 							<figure>
 								<?php echo wp_get_attachment_image($image_1, $size); ?>
 							</figure>	
-						<h3> <?php the_title(); ?></h3>
+							<h3> <?php the_title(); ?></h3>
+						</a>
 					</li>
 				<?php endwhile; ?> 
 				<?php wp_reset_query(); ?>
-	</section>
-	<ul>
+			</ul>
+		</section>
 	<section class="recent-posts">
 		<div class="site-content">
 			<div class="blog-post">

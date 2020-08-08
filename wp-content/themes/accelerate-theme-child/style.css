@@ -65,9 +65,10 @@ Text Domain:  accelerate-theme-child
 .individual-featured-work h3 {
     font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
-figure {
-	width: 33%;
+li.individual-featured-work{
+	display: inline-block;
 }
+
 /* Case Studies */
 aside.case-study-sidebar {
 	float: left;
