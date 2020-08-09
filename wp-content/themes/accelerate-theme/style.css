@@ -626,6 +626,11 @@ a.button, a.button:link {
     font-size: .9em;
     line-height: 1.5;
 }
+ul.social-media-navigation {
+	display: flex;
+	flex-wrap: nowrap;
+	list-style-type: none;
+}
 /* End FOOTER STYLES */
 
 /* Media Queries */
