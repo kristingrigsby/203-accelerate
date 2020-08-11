@@ -11,7 +11,7 @@
 
         <div id="primary" class="site-content sidebar">
 		        <div class="main-content" role="main">
-                    <?php while ( have_posts() ) : the_post(); ?>
+                    <?php while ( have_posts() ) : the_post()
                     $services = get_field('services');
                     $client = get_field('client');
                     $link = get_field('site_link');
@@ -25,7 +25,7 @@
 				<h4><?php echo $services; ?></h4>
 				<h4><span>Client: <?php echo $client; ?></h4>
 				
-				<?php the_exerpt(); ?>	
+				<?php the_excerpt(); ?>	
 				
 					
 				<p class="read-more-link"><a href="<?php echo $link; ?>">Visit Live Site</a></p>
