@@ -78,3 +78,10 @@ div.case-study-images {
 	float: left;
 	width: 650px;
 }
+
+/* Archive Page*/
+div.case-study-images img {
+	width: 100%;
+	height: auto;
+	margin: 30px;
+}
