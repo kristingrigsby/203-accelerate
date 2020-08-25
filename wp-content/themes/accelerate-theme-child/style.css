@@ -85,3 +85,10 @@ div.case-study-images img {
 	height: auto;
 	margin: 30px;
 }
+/* Contact Us */
+div#nf-field-1-container.nf-field-container.textbox-container.label-above {
+	float: left;
+}
+div#nf-field-2-container.nf-field-container.email-container.label-above {
+	float: left;
+}

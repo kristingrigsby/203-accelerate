@@ -19,10 +19,9 @@
 					<p>&copy; <?php bloginfo('title'); ?>, LLC
 				</div>
 				
-				<nav class="social-media-navigation" role="navigation">
-					<ul class="social-media-list">
+				<nav class="social-media-menu" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-					</ul>
+					
 					</nav>	
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
