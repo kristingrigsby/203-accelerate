@@ -57,7 +57,9 @@ Text Domain:  accelerate-theme-child
 	width: 100%;
 }
 .individual-featured-work {
-    margin-bottom: 2em;
+	margin-bottom: 2em;
+	display: inline-flex;
+	justify-content: space-evenly
 }
 .individual-featured-work a {
 	display: inline-block;
@@ -65,10 +67,6 @@ Text Domain:  accelerate-theme-child
 .individual-featured-work h3 {
     font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
-li.individual-featured-work{
-	display: inline-block;
-}
-
 /* Case Studies */
 aside.case-study-sidebar {
 	float: left;
@@ -86,9 +84,33 @@ div.case-study-images img {
 	margin: 30px;
 }
 /* Contact Us */
-div#nf-field-1-container.nf-field-container.textbox-container.label-above {
-	float: left;
+.nf-form-content {
+	display: inline-block;
+}*/
+.nf-field {
+	display: inline-flex;
 }
-div#nf-field-2-container.nf-field-container.email-container.label-above {
-	float: left;
+#nf-field-4 {
+	background: #45ac9d;
+	display: flex;
+	justify-content: flex-end;
+}
+.ninja-forms-req-symbol {
+	display: none;
+  }
+  .nf-field-element {
+	display: flex;
+	flex-wrap: nowrap;
+	list-style: none;
+	justify-content: flex-end; 
+  }
+.nf-form-content {
+	width: 600px;
+}
+/* About */
+#about_1 {
+	background: red;
+}
+.about-sections {
+	list-style-type: none;
 }

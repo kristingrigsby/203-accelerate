@@ -626,17 +626,23 @@ a.button, a.button:link {
     font-size: .9em;
     line-height: 1.5;
 }
-ul.social-media-menu {
+.social-media-menu {
 	display: flex;
 	flex-wrap: nowrap;
 	list-style: none;
 	justify-content: flex-end;
 }
 
-i._mi.dashicons {
+.social-media-menu li {
+	width: 25px;
+	height: 25px;
 	background-color: black;
 	border-radius: 50%;
-	font: white;
+	margin: 3px;
+	text-align: center;
+}
+.social-media-menu i {
+	color: white;
 }
 /* End FOOTER STYLES */
 
