@@ -9,10 +9,10 @@
  * @since Accelerate Marketing 2.0
  */
 
-
+$size = "full";
 get_header(); ?>
-            
-    <div id="primary" class="site-content sidebar">
+       
+    <div id="primary" class="about-page hero-content">
 		<div class="main-content" role="main">
             <?php while ( have_posts() ) : the_post(); 
                 $about_1 = get_field('about_1');
@@ -29,45 +29,66 @@ get_header(); ?>
                 $image_4 = get_field('image_4');
             ?>
             <?php the_content(); ?>
+    </div>
+    <div id="secondary">        
             <section class="about-us">
 			    <div class="site-content">
                     <ul class="about-sections">
                         <li id="about_1">
-                            <h4><?php echo $about_1; ?></h4>
-                            <h4><?php echo $about_1_description; ?></h4>
-                            <figure>
-                                <?php echo wp_get_attachment_image($image_1); ?>
-                            </figure>	
+                            <div class="individual-about" style="order: 2">
+                                <h4><?php echo $about_1; ?></h4>
+                                <p><?php echo $about_1_description; ?></p>
+                            </div>
+                            <div class="individual-figure" style="order: 1">
+                                <figure>
+                                    <?php echo wp_get_attachment_image($image_1,$size); ?>
+                                </figure>	
+                            </div>
                         </li>
                         <li id="about_2">
-                        <h4><?php echo $about_2; ?></h4>
-                            <h4><?php echo $about_2_description; ?></h4>
-                            <figure>
-                                <?php echo wp_get_attachment_image($image_2); ?>
-                            </figure>	
+                            <div class="individual-about" style="order: 1">
+                                <h4><?php echo $about_2; ?></h4>
+                                <p><?php echo $about_2_description; ?></p>
+                            </div>
+                            <div class="individual-figure" style="order: 2">
+                                <figure>
+                                    <?php echo wp_get_attachment_image($image_2,$size); ?>
+                                </figure>	
+                            </div>
                         </li>
                         <li id="about_3">
-                        <h4><?php echo $about_3; ?></h4>
-                            <h4><?php echo $about_3_description; ?></h4>
-                            <figure>
-                                <?php echo wp_get_attachment_image($image_3); ?>
-                            </figure>	
+                            <div class="individual-about" style="order: 2">
+                                <h4><?php echo $about_3; ?></h4>
+                                <p><?php echo $about_3_description; ?></p>
+                            </div>
+                            <div class="individual-figure" style="order: 1">
+                                <figure>
+                                    <?php echo wp_get_attachment_image($image_3,$size); ?>
+                                </figure>	
+                            </div>    
                         </li>
                         <li id="about_4">
-                        <h4><?php echo $about_4; ?></h4>
-                            <h4><?php echo $about_4_description; ?></h4>
-                            <figure>
-                                <?php echo wp_get_attachment_image($image_4); ?>
-                            </figure>	
+                            <div class="individual-about" style="order: 1">
+                                <h4><?php echo $about_4; ?></h4>
+                                <p><?php echo $about_4_description; ?></p>
+                            <div class="individual-figure" style="order: 2">
+                                <figure>
+                                    <?php echo wp_get_attachment_image($image_4,$size); ?>
+                                </figure>	
+                            </div>
                         </li>
                     </ul>   
                 </div>
             </section>   
-			<?php endwhile; // end of the loop. ?>
-            <section class="contact-us">
-                <h3>Interested in working with us?</h3>
-                <input id="button" class="form-buttom" type="button" value="submit">
-            </section>
-    </div><!-- #primary -->
+            <?php endwhile; // end of the loop. ?>
+        </div>    
+        <div class="contact-us">
+                <div class="half-width">
+                    <h3>Interested in working with us?</h3>
+                </div>
+                <div class="half-width">
+                    <a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
+                </div>
+        </div>
 
 <?php get_footer(); ?>
