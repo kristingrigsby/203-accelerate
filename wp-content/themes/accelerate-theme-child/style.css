@@ -175,3 +175,21 @@ div.case-study-images img {
 .half-width .button {
 	margin-left: 20px;
 }
+.about-intro h2 {
+	width: 50%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #fff;
+	padding-top: 50px;
+}
+.about-intro {
+	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	text-align: center;
+	margin: 0;
+	height: 300px;
+}

@@ -11,7 +11,12 @@
 
 $size = "full";
 get_header(); ?>
-       
+    <div class="about-intro">
+            <h2>Accelerate is a strategy and marketing agency
+                located in the heart of NYC. Our goal is to build businesses by making 
+                our clients visible and making their clients smile.
+            </h2>
+            </div>       
     <div id="primary" class="about-page hero-content">
 		<div class="main-content" role="main">
             <?php while ( have_posts() ) : the_post(); 
@@ -28,6 +33,7 @@ get_header(); ?>
                 $about_4_description = get_field('about_4_description');
                 $image_4 = get_field('image_4');
             ?>
+            
             <?php the_content(); ?>
     </div>
     <div id="secondary">        
