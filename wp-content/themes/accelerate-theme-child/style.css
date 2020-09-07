@@ -147,9 +147,11 @@ div.case-study-images img {
 }
 #about_2 .individual-figure {
 	display: flex;
+	margin-left: 100px;
 }
 #about_4 .individual-figure {
 	display: flex;	
+	margin-left: 100px;
 }
 #about_1 p, #about_3 p {
 	text-align: right;

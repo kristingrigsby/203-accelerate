@@ -71,6 +71,7 @@ get_header(); ?>
                             <div class="individual-about" style="order: 1">
                                 <h4><?php echo $about_4; ?></h4>
                                 <p><?php echo $about_4_description; ?></p>
+                            </div>
                             <div class="individual-figure" style="order: 2">
                                 <figure>
                                     <?php echo wp_get_attachment_image($image_4,$size); ?>
@@ -82,7 +83,7 @@ get_header(); ?>
             </section>   
             <?php endwhile; // end of the loop. ?>
         </div>    
-        <div class="contact-us">
+        <div class="contact-us site-content">
                 <div class="half-width">
                     <h3>Interested in working with us?</h3>
                 </div>
